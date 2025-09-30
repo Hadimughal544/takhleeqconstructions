@@ -80,7 +80,7 @@ async function HandleSubmit(e) {
         <motion.div
   className="min-h-screen flex items-center justify-center bg-contain bg-no-repeat bg-center"
   style={{
-    backgroundImage: "url('/assets/logo-Takhleeq.png')",
+    backgroundImage: "url('/assets/logo-Takhleeq1.png')",
     backgroundSize: "350px 500px",
   }}
   initial={{ opacity: 0, x: 100 }}

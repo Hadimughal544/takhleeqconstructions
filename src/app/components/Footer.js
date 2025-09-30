@@ -22,14 +22,14 @@ export default function Footer() {
   };
   return (
     <footer className="text-white pt-10 bg-[#302560] relative">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 relative">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 pb-10 ">
           {/* Logo & Tagline */}
           <div className="space-y-4 text-center md:text-left">
             <div className="flex justify-center md:justify-start">
               <Image
-                src="/assets/Takhleeq-ORG-WHT.png"
+                src="/assets/Takhleeq-ORG-WHT1.png"
                 alt="company logo"
                 width={70}
                 height={120}
@@ -87,8 +87,8 @@ export default function Footer() {
                 +92 300 4096 765
               </Link>
             </div>
-            <div className="flex items-center gap-8 text-sm">
-                <HiOutlineMail className="text-orange-400"  />
+            <div className="flex items-center gap-4 text-sm">
+                <IoMdMail className="text-orange-400"  />
                 <Link href="mailto:info@takhleeqconstructions.com" className="text-blue-400  hover:underline">
                 <p>info@takhleeqconstructions.com</p>
                 </Link>

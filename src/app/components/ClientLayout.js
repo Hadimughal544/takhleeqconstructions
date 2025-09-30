@@ -56,7 +56,7 @@ export default function ClientLayout({ children }) {
 
       {/* Main Content */}
       <main
-        className={`transition-all duration-500 flex-1 overflow-y-auto ${
+        className={`transition-all duration-500 flex-1 overflow-y-auto pt-20 lg:pt-0 ${
           isLarge && showSidebar ? "ml-32" : "ml-0"
         }`}
       >

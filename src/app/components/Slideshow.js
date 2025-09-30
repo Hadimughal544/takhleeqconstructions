@@ -37,10 +37,10 @@ export default function Slideshow() {
       {/* Overlay text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 z-20 px-4 sm:px-8">
         <Image
-          src={"/assets/Logo-Takhleeq.png"}
+          src={"/assets/Logo-Takhleeq1.png"}
           alt="main logo"
-          height={60}
-          width={120}
+          height={80}
+          width={200}
           className="mb-4 sm:mb-6"
         />
 

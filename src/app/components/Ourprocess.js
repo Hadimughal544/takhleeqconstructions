@@ -8,7 +8,7 @@ import React from 'react'
 
 export default function Ourprocess() {
   return (
-    <section className=' flex flex-col items-center py-10  pb-20 px-20 mt-20 '>
+    <section className=' flex flex-col items-center py-10  pb-20 px-7 lg:px-20 mt-20 '>
       <div className=' text-center max-w-4xl  mb-12 '>
         <h2 className=' text-3xl font-bold mb-4'>
             Our Process

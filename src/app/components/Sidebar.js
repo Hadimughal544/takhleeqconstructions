@@ -34,7 +34,7 @@ export default function Sidebar() {
     >
       <Link href={"/"}>
       <Image
-        src={"/assets/Takhleeq-ORG-WHT.png"}
+        src={"/assets/Takhleeq-ORG-WHT1.png"}
         alt="main logo"
         height={50}
         width={90}

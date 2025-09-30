@@ -42,7 +42,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-white shadow-lg transition-transform duration-300 z-50 lg:hidden ${
+      className={`fixed top-0 left-0 w-full bg-white shadow-lg  transition-transform duration-300 z-50 lg:hidden ${
         show ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
@@ -50,7 +50,7 @@ export default function Header() {
       <div className="px-6 py-4 flex justify-between items-center">
         <Link href="/">
           <Image
-            src="/assets/Logo-Takhleeq.png"
+            src="/assets/Logo-Takhleeq1.png"
             alt="Company Logo"
             width={60}
             height={15}
