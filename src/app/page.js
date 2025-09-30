@@ -18,7 +18,7 @@ export default function page() {
       {/* Services Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-20 px-6 lg:px-20 max-w-[1200px] mx-auto">
         {/* Text Card */}
-        <div className="bg-white text-black p-6 rounded-xl shadow-md flex flex-col justify-between">
+        <div className="bg-white text-black p-6  flex flex-col justify-between">
           <h2 className="text-2xl font-bold mb-4">Our Services</h2>
           <p className="text-sm mb-6">
             We provide complete real estate development services, ensuring smooth execution from concept to completion.
