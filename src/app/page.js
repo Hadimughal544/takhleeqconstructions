@@ -21,7 +21,7 @@ export default function page() {
         <div className="bg-white text-black p-6  flex flex-col justify-between">
           <h2 className="text-2xl font-bold mb-4">Our Services</h2>
           <p className="text-sm mb-6">
-            We provide complete real estate development services, ensuring smooth execution from concept to completion.
+            We provide comprehensive construction solutions, ensuring smooth execution from initial planning to final handover
           </p>
           <Link href="/Services">
             <button className="px-6 py-2 bg-blue-950 border-2 rounded-2xl border-white text-white font-semibold shadow-md hover:bg-orange-600 hover:border-blue-950 transition cursor-pointer">

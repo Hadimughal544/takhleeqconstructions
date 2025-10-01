@@ -63,7 +63,7 @@ export default function ServicesPage() {
       
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-10 md:mx-10 lg:mx-auto mt-30 mb-20">
-        <Link href="/ContactForm">
+        <Link href="/Architecture">
         <ServiceBox
           title="Architecture"
           desc="Creative and functional architectural designs tailored to your lifestyle and space."
@@ -71,7 +71,7 @@ export default function ServicesPage() {
           image="/assets/service1.jpg"
         />
         </Link>
-        <Link href="/ContactForm">
+        <Link href="/Constructions">
         <ServiceBox
           title="Constructions"
           desc="Reliable and high-quality construction solutions delivered on time and within budget."
@@ -79,7 +79,7 @@ export default function ServicesPage() {
           image="/assets/DSC2.jpeg"
         />
         </Link>
-        <Link href="/ContactForm">
+        <Link href="/Renovations">
         <ServiceBox
           title="Renovations"
           desc="Transform and modernize your spaces with our expert renovation services."
@@ -111,7 +111,7 @@ export default function ServicesPage() {
           image="/assets/service6.png"
         />
         </Link>
-        <Link href="/ContactForm">
+        <Link href="/Projectmanagement">
         <ServiceBox
           title="Construction Project Management"
           desc="Efficient project management ensuring smooth execution from start to finish."

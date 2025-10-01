@@ -48,12 +48,12 @@ export default function Slideshow() {
           Where Vision Meets Precision
         </h1>
 
-        <p className="text-white text-sm sm:text-base md:text-lg text-center max-w-3xl">
+        <p className="text-white text-sm sm:text-base md:text-lg text-justify max-w-3xl">
           Takhleeq Construction delivers visionary real estate solutions where
           architecture meets purpose, interiors blend elegance with utility, and
           every detail from landscaping to furniture design reflects precision,
           originality, and client-first innovation. With cutting-edge tools and
-          a commitment to long-term partnerships, we build more than spaces — we
+          a commitment to long-term partnerships, we build more than spaces we
           build trust across Pakistan.
         </p>
 

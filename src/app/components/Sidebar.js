@@ -28,7 +28,7 @@ export default function Sidebar() {
 
   return (
     <aside
-      className={`fixed top-0   left-0 h-screen bg-[#302560]  flex-col w-32 p-4 hidden md:block lg:block items-center transition-transform duration-500 ${
+      className={`fixed top-0   left-0 h-screen bg-[#302560]  flex-col w-32  hidden md:block lg:block items-center transition-transform duration-500 ${
         showSidebar ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -38,7 +38,7 @@ export default function Sidebar() {
         alt="main logo"
         height={50}
         width={90}
-        className="mb-8"
+        className="mb-8 m-4"
       />
       </Link>
       <div className="border-b border-white  w-32 my-4"></div>
@@ -57,7 +57,7 @@ export default function Sidebar() {
           Contact us
         </Link>
       </div>
-      <div className="border-b border-dotted border-white w-32 my-4 mb-10"></div>
+      <div className="border-b  border-white w-32 my-4 mb-10"></div>
 
       <div className=" flex flex-col gap-6 items-center text-white">
       
