@@ -50,23 +50,23 @@ export default function Page() {
   return (
     <section>
       {/* Hero Section */}
-      <div className="relative w-full h-64 sm:h-80 md:h-[550px] flex items-center">
+      <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px]">
         <Image
-          src="/assets/projects.jpg"
+          src="/assets/projects-bg.jpg"
           alt="services image"
           fill
           priority
           className="object-cover"
         />
 
-        <div className="absolute w-full z-10 inset-0 bg-white/50"></div>
+        <div className="absolute w-full z-10 inset-0 bg-black/55"></div>
 
         <div className="flex flex-col items-center justify-center absolute text-center max-w-2xl sm:max-w-3xl mx-auto inset-0 z-20 px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
             Projects
           </h1>
-          <div className="border-b w-1/4 mb-4"></div>
-          <p className="text-black text-base sm:text-lg">
+          <div className="border-b  text-white w-1/4 mb-4"></div>
+          <p className="text-white text-base sm:text-lg">
             Construction Highlights
           </p>
         </div>

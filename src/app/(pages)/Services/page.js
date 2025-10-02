@@ -40,21 +40,21 @@ function ServiceBox({ title, desc, Icon, image }) {
 export default function ServicesPage() {
   return (
     <section className="min-h-screen bg-white  ">
-        <div className="relative w-full h-[350px] items-center ">
+        <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] flex justify-center ">
           
             <Image
-            src="/assets/servicegif1.gif"
+            src="/assets/servicegif1-1.gif"
             alt="services image"
             fill
             priority
             className="object-cover "
             />
 
-            <div className="absolute w-full  z-10 inset-0 bg-white/50 animate-[zoom_10s_ease-in-out_infinite] "></div>
+            <div className="absolute w-full  z-10 inset-0 bg-black/55 "></div>
 
             <div className="absolute text-center max-w-3xl mx-auto mb-16 inset-0 z-20  mt-25 ">
-        <h1 className="text-4xl font-bold mb-4 text-black">Our Services</h1>
-        <p className="text-black text-lg ">
+        <h1 className="text-4xl font-bold mb-4 text-white">Our Services</h1>
+        <p className="text-white text-lg ">
           We provide end-to-end construction and design services, tailored to meet your unique needs. 
           From concept to completion, our team is here to create safe, functional, and beautiful spaces.
         </p>
@@ -68,7 +68,7 @@ export default function ServicesPage() {
           title="Architecture"
           desc="Creative and functional architectural designs tailored to your lifestyle and space."
           Icon={Building}
-          image="/assets/service1.jpg"
+          image="/assets/services/Architecture1.gif"
         />
         </Link>
         <Link href="/Constructions">
@@ -76,7 +76,7 @@ export default function ServicesPage() {
           title="Constructions"
           desc="Reliable and high-quality construction solutions delivered on time and within budget."
           Icon={Hammer}
-          image="/assets/DSC2.jpeg"
+          image="/assets/services/Construction-1.gif"
         />
         </Link>
         <Link href="/Renovations">
@@ -84,31 +84,31 @@ export default function ServicesPage() {
           title="Renovations"
           desc="Transform and modernize your spaces with our expert renovation services."
           Icon={Paintbrush}
-          image="/assets/DSC4.jpeg"
+          image="/assets/services/renovations.gif"
         />
         </Link>
-        <Link href="/ContactForm">
+        <Link href="/Interior">
         <ServiceBox
-          title="Interior"
+          title="Interior Design"
           desc="Stylish interior designs that balance comfort, aesthetics, and functionality."
           Icon={Sofa}
-          image="/assets/DSC5.jpeg"
+          image="/assets/services/Interior2-1.gif"
         />
         </Link>
-        <Link href="/ContactForm">
+        <Link href="/Landscaping">
         <ServiceBox
           title="Landscaping"
           desc="Enhance your outdoors with sustainable and elegant landscaping solutions."
           Icon={Trees}
-          image="/assets/service5.jpg"
+          image="/assets/services/Landscap-1.gif"
         />
         </Link>
-        <Link href="/ContactForm">
+        <Link href="/Costestimation">
         <ServiceBox
           title="Cost Estimation"
           desc="Transparent and accurate cost estimation for smart project planning."
           Icon={Calculator}
-          image="/assets/service6.png"
+          image="/assets/services/costestimate.gif"
         />
         </Link>
         <Link href="/Projectmanagement">
@@ -116,7 +116,7 @@ export default function ServicesPage() {
           title="Construction Project Management"
           desc="Efficient project management ensuring smooth execution from start to finish."
           Icon={ClipboardCheck}
-          image="/assets/service7.jpg"
+          image="/assets/services/project.gif"
         />
         </Link>
       </div>

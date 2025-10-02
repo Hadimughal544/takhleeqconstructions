@@ -57,7 +57,7 @@ export default function Footer() {
 
           {/* Explore */}
           <div>
-            <h2 className="text-2xl font-semibold mb-3">Explore</h2>
+            <h2 className="text-2xl font-semibold ">Explore</h2>
             <ul className="space-y-1 text-sm">
               <li><Link href="/" className="hover:underline">Home</Link></li>
               <li><Link href="/Services" className="hover:underline">Services</Link></li>
@@ -68,40 +68,48 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="space-y-2">
+          <div className="space-y-2 ">
             <h2 className="text-2xl font-semibold">Contact Us</h2>
             <p className="text-sm text-gray-300">We’re here to help.</p>
-
-            
-            <div className="flex items-center gap-4 ">
+            <div className=" flex gap-4">
+            <div className=" flex flex-col gap-5 mt-2">
               <FaLocationDot className="text-orange-400 text-shadow-md"  />
+              <FaPhone className="text-orange-400 mt-1" />
+              <IoMdMail className="text-orange-400"  />
+            </div>
+            
+            <div className="flex flex-col gap-2">
+            <div className="flex items-center gap-4 ">
+              
               <Link href="https://share.google/ZkcV9lL3Yy1p0R3cn" className="text-blue-400 hover:underline text-sm" >
-                Plaza # 1, Sector Q, DHA Phase 7, Lahore 
+                Plaza # 1, 2nd Floor, Sector Q, DHA Phase 7, Lahore 
               </Link>
             </div>
 
             
             <div className="flex items-center gap-4 text-sm">
-              <FaPhone className="text-orange-400" />
+              
               <Link href="tel:+923004096765" className="text-blue-400 hover:underline">
                 +92 300 4096 765
               </Link>
             </div>
             <div className="flex items-center gap-4 text-sm">
-                <IoMdMail className="text-orange-400"  />
-                <Link href="mailto:info@takhleeqconstructions.com" className="text-blue-400  hover:underline">
+                
+                <Link href="mailto:info@takhleeqconstructions.com" className="text-blue-400  hover:underline mt-1">
                 <p>info@takhleeqconstructions.com</p>
                 </Link>
+              </div>
+              </div>
               </div>
           </div>
 
           {/* Socials */}
-          <div>
+          <div className=" ml-20">
             <h2 className="text-2xl font-semibold mb-6">Follow us</h2>
             <div className="flex justify-center md:justify-start gap-4 text-2xl text-orange-400">
-              <Link href="#"><FaTiktok /></Link>
-              <Link href="#"><SiInstagram /></Link>
-              <Link href="#"><FaFacebook /></Link>
+              <Link href="#" target="_blank" rel="noopener noreferrer"><FaTiktok /></Link>
+              <Link href="https://www.instagram.com/takhleeqconsultant" target="_blank" rel="noopener noreferrer"><SiInstagram /></Link>
+              <Link href="https://www.facebook.com/takleeqconsultant/" target="_blank" rel="noopener noreferrer"><FaFacebook /></Link>
               
             </div>
           </div>  

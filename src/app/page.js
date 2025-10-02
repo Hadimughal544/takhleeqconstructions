@@ -1,10 +1,10 @@
 import React from 'react';
 import Slideshow from './components/Slideshow';
 import Image from 'next/image';
-import { Star } from "lucide-react";
-import { FaRulerCombined, FaTree, FaChair } from "react-icons/fa";
+import { FaRulerCombined, FaTree } from "react-icons/fa";
 import { GiCargoCrane } from "react-icons/gi";
 import { MdDesignServices } from "react-icons/md";
+import { SlCalculator } from "react-icons/sl";
 import Link from 'next/link';
 
 export default function page() {
@@ -12,13 +12,13 @@ export default function page() {
     <main className='flex flex-col min-h-screen'>
       {/* Slideshow */}
       <div className='w-full'>
-        <Slideshow/>
+        <Slideshow />
       </div>
 
       {/* Services Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-20 px-6 lg:px-20 max-w-[1200px] mx-auto">
         {/* Text Card */}
-        <div className="bg-white text-black p-6  flex flex-col justify-between">
+        <div className="bg-white text-black p-6 flex flex-col justify-between">
           <h2 className="text-2xl font-bold mb-4">Our Services</h2>
           <p className="text-sm mb-6">
             We provide comprehensive construction solutions, ensuring smooth execution from initial planning to final handover
@@ -33,37 +33,42 @@ export default function page() {
         {/* Service Cards */}
         {[
           {
-            img: "/assets/services/Architecture.gif",
+            img: "/assets/services/Architecture1.gif",
             icon: <FaRulerCombined />,
             title: "Architecture",
-            text: "We design purposeful spaces where form meets function, blending creativity with structural excellence."
+            text: "We design purposeful spaces where form meets function, blending creativity with structural excellence.",
+            link: "/Architecture"
           },
           {
-            img: "/assets/services/Construction.gif",
+            img: "/assets/services/Construction-1.gif",
             icon: <GiCargoCrane />,
             title: "Construction",
-            text: "Our builds reflect integrity and precision, delivered with top-tier tools and expert craftsmanship."
+            text: "Our builds reflect integrity and precision, delivered with top-tier tools and expert craftsmanship.",
+            link: "/Construction"
           },
           {
-            img: "/assets/services/Interior2.gif",
+            img: "/assets/services/Interior2-1.gif",
             icon: <MdDesignServices />,
             title: "Interior Design",
-            text: "We craft interiors that balance beauty and utility, tailored to elevate everyday living."
+            text: "We craft interiors that balance beauty and utility, tailored to elevate everyday living.",
+            link: "/Interior"
           },
           {
-            img: "/assets/services/Landscap.gif",
+            img: "/assets/services/Landscap-1.gif",
             icon: <FaTree />,
             title: "Landscaping",
-            text: "We shape outdoor environments with lush greenery, serene water features, and thoughtful design."
+            text: "We shape outdoor environments with lush greenery, serene water features, and thoughtful design.",
+            link: "/Landscaping"
           },
           {
-            img: "/assets/services/Furniture Design.gif",
-            icon: <FaChair />,
-            title: "Furniture Design",
-            text: "Our furniture is bespoke and original, combining timeless motifs with superior craftsmanship."
+            img: "/assets/services/costestimate.gif",
+            icon: <SlCalculator />,
+            title: "Cost Estimation",
+            text: "We provide accurate project cost evaluations to help you budget effectively and plan ahead.",
+            link: "/Costestimation"
           },
         ].map((service, index) => (
-          <Link href="/ContactForm" key={index}>
+          <Link href={service.link} key={index}>
             {HoverCard(service.img, service.icon, service.title, service.text)}
           </Link>
         ))}
@@ -83,6 +88,7 @@ function HoverCard(image, icon, title, text) {
         fill
         className="object-cover transition-transform duration-500 group-hover:scale-110"
       />
+      <div className=" absolute bg-[#302560]/60 w-full h-14 bottom-0 left-0 right-0 z-10 group-hover:opacity-0"></div>
 
       {/* Title (bottom-left) */}
       <div className="absolute bottom-4 left-4 z-10 transition duration-500 group-hover:opacity-0">

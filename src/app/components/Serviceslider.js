@@ -37,7 +37,7 @@ export default function Serviceslider() {
   }, []);
 
   return (
-    <section className="bg-orange-400 py-16 my-20">
+    <section className="bg-orange-400 py-16 my-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
         {/* Text Section */}
         <div className="flex-1 space-y-6">

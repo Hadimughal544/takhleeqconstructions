@@ -57,11 +57,12 @@ export default function Sidebar() {
           Contact us
         </Link>
       </div>
-      <div className="border-b  border-white w-32 my-4 mb-10"></div>
+      <div className="border-b  border-white w-32 my-4 mb-8"></div>
 
       <div className=" flex flex-col gap-6 items-center text-white">
       
-      <div className="flex gap-4 items-center text-sm">
+      <div className="flex gap-1 flex-col items-center text-sm">
+        <p>Call us !</p>
        <Link href="tel:+923004096765">
           <p className="hover:text-orange-500 hover:scale-115 cursor-pointer">
           0300 4096765

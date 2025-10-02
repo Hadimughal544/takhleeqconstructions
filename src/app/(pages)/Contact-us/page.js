@@ -16,14 +16,14 @@ export default function Page() {
         {/* Hero Section */}
         <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px]">
           <Image
-            src="/assets/contact-us.jpg"
+            src="/assets/contact-us1.jpg"
             alt="services image"
             fill
             priority
             className="object-cover"
           />
 
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-black/55"></div>
 
           <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-4">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg">

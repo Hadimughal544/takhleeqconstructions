@@ -17,13 +17,13 @@ export default function Page() {
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-white/50 animate-[zoom_10s_ease-in-out_infinite] z-10"></div>
+        <div className="absolute inset-0 bg-black/55  z-10"></div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
             About us
           </h1>
-          <p className="text-black text-sm sm:text-base md:text-lg max-w-3xl">
+          <p className="text-white text-sm sm:text-base md:text-lg max-w-3xl">
             At Takhleeq Construction, we offer complete design and build
             solutions crafted to match your unique goals. From initial concept
             to final delivery, our team ensures every space is safe, functional,

@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
+import { FaPhone } from "react-icons/fa6";
 
 export default function Constructions() {
   return (
@@ -81,6 +82,25 @@ export default function Constructions() {
         </p>
       </div>
     </div>
+
+     <motion.div
+           className=" flex items-center justify-center"
+           initial={{ opacity: 0 }}
+whileInView={{ opacity: 1 }}
+transition={{ duration: 1.5, ease: "easeInOut" }}
+viewport={{ once: true }}
+
+          >
+
+            <Link href="/service" className=' p-4 bg-orange-500 rounded-xl px-10  flex gap-4 items-center justify-center text-white text-xl font-bold hover:bg-[#302560] '>
+  <FaPhone  />
+  <h3 className=' hover:underline'>
+    From Idea to Execution Let’s Begin.
+Click to Call Now and Skip the Delays.
+  </h3>
+  </Link>
+
+          </motion.div>
 
     {/* Structural Improvements */}
     <div className="flex flex-col md:flex-row items-center gap-8">

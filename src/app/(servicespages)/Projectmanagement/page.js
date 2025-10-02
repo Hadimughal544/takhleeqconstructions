@@ -3,26 +3,27 @@ import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
+import { FaPhone } from "react-icons/fa6";
 
 export default function Constructions() {
   return (
     <main>
         <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px]">
                 <Image
-                  src="/assets/architecturepage.jpg"
+                  src="/assets/bg/project-bg.jpg"
                   alt="services image"
                   fill
                   priority
                   className="object-cover"
                 />
         
-                <div className="absolute inset-0 bg-white/50 animate-[zoom_10s_ease-in-out_infinite] z-10"></div>
+                <div className="absolute inset-0 bg-black/65 z-10"></div>
         
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
                     Construction Project Management 
                   </h1>
-                  <p className="text-black text-sm sm:text-base md:text-lg max-w-3xl">
+                  <p className="text-white text-sm sm:text-base md:text-lg max-w-3xl">
                     Ensuring smooth, efficient project delivery from initial planning to final 
                     handover with expert coordination, quality control, and on-site precision.
 
@@ -91,6 +92,25 @@ export default function Constructions() {
   </p>
 </div>
 
+<motion.div
+           className=" flex items-center justify-center"
+           initial={{ opacity: 0 }}
+whileInView={{ opacity: 1 }}
+transition={{ duration: 1.5, ease: "easeInOut" }}
+viewport={{ once: true }}
+
+          >
+
+            <Link href="/service" className=' p-4 bg-orange-500 rounded-xl px-10  flex gap-4 items-center justify-center text-white text-xl font-bold hover:bg-[#302560] '>
+  <FaPhone  />
+  <h3 className=' hover:underline'>
+    From Idea to Execution Let’s Begin.
+Click to Call Now and Skip the Delays.
+  </h3>
+  </Link>
+
+          </motion.div>
+
   <div className="w-full">
   <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
     Project Management Expertise
@@ -133,6 +153,8 @@ export default function Constructions() {
       </p>
     </div>
   </div>
+
+   
 
   <div className="w-full py-12 px-6 md:px-16 flex justify-center">
   <div className="max-w-5xl bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl p-10 md:p-14 relative overflow-hidden group">

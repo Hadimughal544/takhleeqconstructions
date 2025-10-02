@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const images = ["/assets/architects1.gif", "/assets/architects2.gif"];
+const images = ["/assets/architects1-1.gif", "/assets/architects2-1.gif", "/assets/tasla-1.gif", "/assets/Marbel-1.gif"];
 
 export default function Slideshow() {
   const [currentImage, setCurrentImage] = useState(0);

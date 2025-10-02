@@ -3,26 +3,27 @@ import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
+import { FaPhone } from "react-icons/fa6";
 
 export default function Architecture() {
   return (
     <main>
         <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px]">
                 <Image
-                  src="/assets/architecturepage.jpg"
+                  src="/assets/bg/architecture-bg1.jpg"
                   alt="services image"
                   fill
                   priority
                   className="object-cover"
                 />
         
-                <div className="absolute inset-0 bg-white/50 animate-[zoom_10s_ease-in-out_infinite] z-10"></div>
+                <div className="absolute inset-0 bg-black/55 z-10"></div>
         
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-black">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
                     Architectural Design Services
                   </h1>
-                  <p className="text-black text-sm sm:text-base md:text-lg max-w-3xl">
+                  <p className="text-white text-sm sm:text-base md:text-lg max-w-3xl">
                     We offer top-tier architectural design solutions in major cities including Lahore, Karachi,
                      Islamabad, Multan, and beyond. Our team delivers innovative, functional, and visually striking
                       designs for both residential and commercial projects ensuring precision and quality in every detail.
@@ -102,6 +103,27 @@ export default function Architecture() {
       />
     </div>
   </div>
+
+  <motion.div
+           className=" flex items-center justify-center"
+           initial={{ opacity: 0 }}
+whileInView={{ opacity: 1 }}
+transition={{ duration: 1.5, ease: "easeInOut" }}
+viewport={{ once: true }}
+
+          >
+
+            <Link href="/service" className=' p-4 bg-orange-500 rounded-xl px-10  flex gap-4 items-center justify-center text-white text-xl font-bold hover:bg-[#302560] '>
+  <FaPhone  />
+  <h3 className=' hover:underline'>
+    From Idea to Execution Let’s Begin.
+Click to Call Now and Skip the Delays.
+  </h3>
+  </Link>
+
+          </motion.div>
+  
+  
 
   <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-center">
     {/* Image */}
