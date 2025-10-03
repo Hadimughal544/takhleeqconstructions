@@ -83,14 +83,14 @@ export default function Page() {
               <div className="h-48 sm:h-64 md:h-[400px] lg:h-[500px]">
                 {project.headImage && (
                   <Image
-                    src={`https://takhleeqconstructions.com/api${project.headImage}`}
+                    src={`https://takhleeqconstructions.com${project.headImage}`}
                     alt="Head"
                     width={600}
                     height={400}
                     className="w-full h-full object-cover rounded-2xl cursor-pointer"
                     onClick={() =>
                       openLightbox(
-                        [`https://takhleeqconstructions.com/api${project.headImage}`],
+                        [`https://takhleeqconstructions.com${project.headImage}`],
                         0
                       )
                     }
@@ -116,7 +116,7 @@ export default function Page() {
                   {project.extraImages.map((img, idx) => (
                     <Image
                       key={idx}
-                      src={`http://localhost:3000${img}`}
+                      src={`https://takhleeqconstructions.com${img}`}
                       alt={`Extra ${idx}`}
                       width={200}
                       height={200}
@@ -124,7 +124,7 @@ export default function Page() {
                       onClick={() =>
                         openLightbox(
                           project.extraImages.map(
-                            (img) => `http://localhost:3000${img}`
+                            (img) => `https://takhleeqconstructions.com${img}`
                           ),
                           idx
                         )
