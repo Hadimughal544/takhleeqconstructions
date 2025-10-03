@@ -83,14 +83,14 @@ export default function Page() {
               <div className="h-48 sm:h-64 md:h-[400px] lg:h-[500px]">
                 {project.headImage && (
                   <Image
-                    src={`http://localhost:3000${project.headImage}`}
+                    src={`https://takhleeqconstructions.com/api${project.headImage}`}
                     alt="Head"
                     width={600}
                     height={400}
                     className="w-full h-full object-cover rounded-2xl cursor-pointer"
                     onClick={() =>
                       openLightbox(
-                        [`http://localhost:3000${project.headImage}`],
+                        [`https://takhleeqconstructions.com/api${project.headImage}`],
                         0
                       )
                     }
