@@ -16,7 +16,7 @@ export default function Slideshow() {
   }, []);
 
   return (
-    <div className="relative w-full  h-[700px] md:h-[600px] lg:h-[700px] overflow-hidden">
+    <div className="relative w-full  h-[700px] md:h-[700px] lg:h-[700px] overflow-hidden">
       {images.map((src, index) => (
         <Image
           key={index}
@@ -35,7 +35,7 @@ export default function Slideshow() {
       <div className="absolute inset-0 bg-black/10 z-10"></div>
 
       {/* Overlay text */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 z-20 px-4 sm:px-8">
+      <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 z-20 px-4 sm:px-8 ">
         <Image
           src={"/assets/Logo-Takhleeq1.png"}
           alt="main logo"

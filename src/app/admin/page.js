@@ -13,7 +13,7 @@ export default function Page() {
    if (!confirm("Are you sure you want to delete this details?")) return;
 
     try {
-      const res = await fetch(`http://127.0.0.1:4000/details/${id}`, {
+      const res = await fetch(`https://takhleeqconstructions.com/api/details/${id}`, {
         method: "DELETE",
       });
 
@@ -29,7 +29,7 @@ export default function Page() {
   useEffect(() => {
     async function fetchdetails() {
       try {
-        const res = await fetch("http://127.0.0.1:4000/details", {
+        const res = await fetch("https://takhleeqconstructions.com/api/details", {
           headers: {
             "Content-Type": "application/json",
           },

@@ -41,7 +41,7 @@ export default function Page() {
       formData.append("extraImages", file); // matches FilesInterceptor('extraImages')
     });
 
-    const res = await fetch("http://127.0.0.1:4000/projects", {
+    const res = await fetch("https://takhleeqconstructions.com/api/projects", {
       method: "POST",
       body: formData,
     });

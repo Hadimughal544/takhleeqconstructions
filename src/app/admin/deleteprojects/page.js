@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   // Fetch all projects
   useEffect(() => {
     async function fetchProjects() {
-      const res = await fetch("http://127.0.0.1:4000/projects");
+      const res = await fetch("https://takhleeqconstructions.com/api/projects");
       const data = await res.json();
       setProjects(data);
     }
@@ -20,7 +20,7 @@ export default function ProjectsPage() {
     if (!confirm("Are you sure you want to delete this project?")) return;
 
     try {
-      const res = await fetch(`http://127.0.0.1:4000/projects/${id}`, {
+      const res = await fetch(`https://takhleeqconstructions.com/api/projects/${id}`, {
         method: "DELETE",
       });
 
