@@ -52,9 +52,9 @@ export default function ServicesPage() {
 
             <div className="absolute w-full  z-10 inset-0 bg-black/55 "></div>
 
-            <div className="absolute text-center max-w-3xl mx-auto mb-16 inset-0 z-20  mt-25 ">
-        <h1 className="text-4xl font-bold mb-4 text-white">Our Services</h1>
-        <p className="text-white text-lg ">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-20">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">Our Services</h1>
+        <p className="text-white text-sm sm:text-base md:text-lg max-w-3xl">
           We provide end-to-end construction and design services, tailored to meet your unique needs. 
           From concept to completion, our team is here to create safe, functional, and beautiful spaces.
         </p>

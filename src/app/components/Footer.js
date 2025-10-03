@@ -45,13 +45,13 @@ export default function Footer() {
           <div>
             <h2 className="text-2xl font-semibold mb-3">Our Services</h2>
             <ul className="space-y-1 text-sm">
-              <li><Link href="/Contact-us" className="hover:underline">Architecture</Link></li>
-              <li><Link href="/Contact-us" className="hover:underline">Construction</Link></li>
-              <li><Link href="/Contact-us" className="hover:underline">Renovations</Link></li>
-              <li><Link href="/Contact-us" className="hover:underline">Interior</Link></li>
-              <li><Link href="/Contact-us" className="hover:underline">Landscaping</Link></li>
-              <li><Link href="/Contact-us" className="hover:underline">Cost Estimation</Link></li>
-              <li><Link href="/Contact-us" className="hover:underline">Construction Project Management</Link></li>
+              <li><Link href="/Architecture" className="hover:underline">Architecture</Link></li>
+              <li><Link href="/Constructions" className="hover:underline">Construction</Link></li>
+              <li><Link href="/Renovations" className="hover:underline">Renovations</Link></li>
+              <li><Link href="/Interior" className="hover:underline">Interior</Link></li>
+              <li><Link href="/Landscaping" className="hover:underline">Landscaping</Link></li>
+              <li><Link href="/Costestimation" className="hover:underline">Cost Estimation</Link></li>
+              <li><Link href="/Projectmanagement" className="hover:underline">Construction Project Management</Link></li>
             </ul>
           </div>
 
@@ -104,9 +104,9 @@ export default function Footer() {
           </div>
 
           {/* Socials */}
-          <div className=" ml-20">
+          <div className=" ml-0 md:ml-10 ">
             <h2 className="text-2xl font-semibold mb-6">Follow us</h2>
-            <div className="flex justify-center md:justify-start gap-4 text-2xl text-orange-400">
+            <div className="flex  md:justify-start gap-4 text-2xl text-orange-400">
               <Link href="#" target="_blank" rel="noopener noreferrer"><FaTiktok /></Link>
               <Link href="https://www.instagram.com/takhleeqconsultant" target="_blank" rel="noopener noreferrer"><SiInstagram /></Link>
               <Link href="https://www.facebook.com/takleeqconsultant/" target="_blank" rel="noopener noreferrer"><FaFacebook /></Link>

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 
@@ -73,6 +74,11 @@ export default function Page() {
             className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-700"
           />
         </div>
+        <Link href="/admin/addAdmin">
+              <button className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition">
+                Add Admin
+              </button>
+            </Link>
 
         {/* Submit Button */}
         <button

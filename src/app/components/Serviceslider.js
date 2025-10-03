@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 const slides = [
-  { type: "video", src: "/assets/DSCV.mp4" }, // fixed video
+  { type: "video", src: "/assets/DSCV.mp4" },
   { type: "image", src: "/assets/DSC1.jpeg" },
   { type: "image", src: "/assets/DSC2.jpeg" },
   { type: "image", src: "/assets/DSC3.jpeg" },
@@ -18,23 +18,38 @@ const slides = [
 
 export default function Serviceslider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerView, setItemsPerView] = useState(2); // default for medium/large
+
+  const updateItemsPerView = () => {
+    if (window.innerWidth < 768) {
+      setItemsPerView(1); // small screens
+    } else {
+      setItemsPerView(2); // medium and above
+    }
+  };
+
+  useEffect(() => {
+    updateItemsPerView();
+    window.addEventListener("resize", updateItemsPerView);
+    return () => window.removeEventListener("resize", updateItemsPerView);
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
-      prev < slides.length - 2 ? prev + 1 : 0
+      prev < slides.length - 1 - itemsPerView ? prev + 1 : 0
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev > 0 ? prev - 1 : slides.length - 2
+      prev > 0 ? prev - 1 : slides.length - 1 - itemsPerView
     );
   };
 
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [itemsPerView]);
 
   return (
     <section className="bg-orange-400 py-16 my-10">
@@ -57,9 +72,9 @@ export default function Serviceslider() {
             lasting impact.
           </p>
           <Link href="/Contact-us">
-          <button className="px-8 py-4 bg-blue-950 border-2 rounded-2xl border-white text-white font-semibold shadow-md hover:bg-orange-600 hover:border-blue-950 transition cursor-pointer">
-            How we can support you →
-          </button>
+            <button className="px-8 py-4 bg-blue-950 border-2 rounded-2xl border-white text-white font-semibold shadow-md hover:bg-orange-600 hover:border-blue-950 transition cursor-pointer">
+              How we can support you →
+            </button>
           </Link>
         </div>
 
@@ -93,11 +108,16 @@ export default function Serviceslider() {
             <div
               className="flex transition-transform duration-700 ease-in-out"
               style={{
-                transform: `translateX(-${currentIndex * (100 / 2)}%)`,
+                transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
               }}
             >
               {slides.slice(1).map((slide, index) => (
-                <div key={index} className=" w-1/2 flex-shrink-0 px-2">
+                <div
+                  key={index}
+                  className={`${
+                    itemsPerView === 1 ? "w-full" : "w-1/2"
+                  } flex-shrink-0 px-2`}
+                >
                   <div className="relative h-[350px] rounded-xl overflow-hidden shadow-lg bg-black flex items-center justify-center">
                     {slide.type === "image" ? (
                       <Image
@@ -137,14 +157,16 @@ export default function Serviceslider() {
 
             {/* Dots */}
             <div className="flex justify-center mt-4 gap-2">
-              {Array.from({ length: slides.length - 2 }).map((_, idx) => (
-                <div
-                  key={idx}
-                  className={`h-2 w-2 rounded-full ${
-                    idx === currentIndex ? "bg-black" : "bg-gray-400"
-                  }`}
-                />
-              ))}
+              {Array.from({ length: slides.length - 1 - itemsPerView + 1 }).map(
+                (_, idx) => (
+                  <div
+                    key={idx}
+                    className={`h-2 w-2 rounded-full ${
+                      idx === currentIndex ? "bg-black" : "bg-gray-400"
+                    }`}
+                  />
+                )
+              )}
             </div>
           </div>
         </div>
