@@ -41,7 +41,7 @@ export default function Page() {
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-100 to-gray-300">
       <form
         onSubmit={HandleLogin}
-        className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-sm"
+        className="bg-white shadow-lg rounded-2xl mx-10 p-8 w-full max-w-sm"
       >
         <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">
           Admin Login

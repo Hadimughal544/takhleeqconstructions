@@ -116,7 +116,7 @@ export default function EditProjectPage() {
                     {p.headImage && (
                       <div className="w-full h-40 relative mb-3">
                         <Image
-                          src={`https://takhleeqconstructions.com/api${p.headImage}`}
+                          src={`https://takhleeqconstructions.com${p.headImage}`}
                           alt={p.Title}
                           fill
                           className="rounded-lg object-cover"
@@ -189,7 +189,7 @@ export default function EditProjectPage() {
                 {selectedProject.headImage && !headImage && (
                   <div className="relative inline-block mb-2 w-full h-48">
                     <Image
-                      src={`https://takhleeqconstructions.com/api${selectedProject.headImage}`}
+                      src={`https://takhleeqconstructions.com${selectedProject.headImage}`}
                       alt="Head"
                       fill
                       className="rounded-lg shadow object-cover"
@@ -238,7 +238,7 @@ export default function EditProjectPage() {
                   {imagesToKeep.map((img, idx) => (
                     <div key={idx} className="relative w-full h-24">
                       <Image
-                        src={`https://takhleeqconstructions.com/api${img}`}
+                        src={`https://takhleeqconstructions.com${img}`}
                         alt={`Extra ${idx}`}
                         fill
                         className="rounded-lg shadow object-cover"

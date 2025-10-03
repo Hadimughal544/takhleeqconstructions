@@ -35,25 +35,31 @@ export default function ProjectsPage() {
 
   return (
     <ProtectedRoute>
-    <main className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-2xl font-bold mb-4">Projects</h1>
+    <main className="p-4 sm:p-6 bg-gray-100 min-h-screen">
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-gray-800">
+        Projects
+      </h1>
 
       {projects.length === 0 ? (
-        <p>No projects available.</p>
+        <p className="text-gray-600">No projects available.</p>
       ) : (
-        <ul className="space-y-4">
+        <ul className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <li
               key={project.id}
-              className="flex items-center justify-between bg-white p-4 rounded-lg shadow"
+              className="flex flex-col justify-between bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow"
             >
-              <div>
-                <h2 className="font-semibold">{project.Title}</h2>
-                <p className="text-sm text-gray-600">{project.Description}</p>
+              <div className="mb-4">
+                <h2 className="text-lg font-semibold text-gray-900 truncate">
+                  {project.Title}
+                </h2>
+                <p className="text-sm text-gray-600 mt-1 line-clamp-3">
+                  {project.Description}
+                </p>
               </div>
               <button
                 onClick={() => handleDelete(project.id)}
-                className="bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700"
+                className="self-start sm:self-end bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-red-700 text-sm sm:text-base"
               >
                 Delete
               </button>
