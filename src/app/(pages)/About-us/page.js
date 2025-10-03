@@ -33,7 +33,7 @@ export default function Page() {
       </div>
 
       {/* Who we are */}
-      <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-12 py-10">
+      <div className="min-h-screen flex flex-col items-center  px-4 sm:px-6 lg:px-12 py-10">
         <div className="flex flex-col md:flex-row items-center relative max-w-6xl mx-auto gap-8">
           {/* Left text */}
           <motion.div
@@ -82,7 +82,7 @@ export default function Page() {
       </div>
 
       {/* What we do */}
-      <div className="px-4 sm:px-6 lg:px-12 py-10 flex flex-col md:flex-row items-center relative max-w-6xl mx-auto gap-8">
+      <div className="px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center  relative max-w-6xl mx-auto gap-8">
         {/* Left image */}
         <div className="relative w-full md:w-1/2 h-64 sm:h-80 md:h-[450px] lg:h-[500px] rounded-lg overflow-hidden">
           <Image

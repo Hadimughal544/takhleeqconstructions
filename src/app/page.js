@@ -44,7 +44,7 @@ export default function page() {
             icon: <GiCargoCrane />,
             title: "Construction",
             text: "Our builds reflect integrity and precision, delivered with top-tier tools and expert craftsmanship.",
-            link: "/Construction"
+            link: "/Constructions"
           },
           {
             img: "/assets/services/Interior2-1.gif",
