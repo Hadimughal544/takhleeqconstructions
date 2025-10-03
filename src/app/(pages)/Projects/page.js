@@ -12,7 +12,7 @@ export default function Page() {
   useEffect(() => {
     async function fetchProjects() {
       try {
-        const res = await fetch("http://localhost:3000/projects");
+        const res = await fetch("http://127.0.0.1:4000/projects");
         if (!res.ok) throw new Error("Failed to fetch projects");
 
         const data = await res.json();

@@ -18,7 +18,7 @@ async function HandleSubmit(e) {
   e.preventDefault();
   setLoading(true);
   try {
-    const res = await fetch("http://localhost:3000/details", {
+    const res = await fetch("http://127.0.0.1:4000/details", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // fixed lowercase

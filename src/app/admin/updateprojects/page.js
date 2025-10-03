@@ -17,7 +17,7 @@ export default function EditProjectPage() {
     async function fetchProjects() {
       setLoading(true);
       try {
-        const res = await fetch("http://localhost:3000/projects");
+        const res = await fetch("http://127.0.0.1:4000/projects");
         if (!res.ok) throw new Error("Failed to fetch projects");
         const data = await res.json();
         setProjects(data);
@@ -62,7 +62,7 @@ export default function EditProjectPage() {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/projects/${selectedProject.id}`,
+        `http://127.0.0.1:4000/projects/${selectedProject.id}`,
         {
           method: "PUT",
           body: formData,
@@ -116,7 +116,7 @@ export default function EditProjectPage() {
                     {p.headImage && (
                       <div className="w-full h-40 relative mb-3">
                         <Image
-                          src={`http://localhost:3000${p.headImage}`}
+                          src={`http://127.0.0.1:4000${p.headImage}`}
                           alt={p.Title}
                           fill
                           className="rounded-lg object-cover"
@@ -189,7 +189,7 @@ export default function EditProjectPage() {
                 {selectedProject.headImage && !headImage && (
                   <div className="relative inline-block mb-2 w-full h-48">
                     <Image
-                      src={`http://localhost:3000${selectedProject.headImage}`}
+                      src={`http://127.0.0.1:4000${selectedProject.headImage}`}
                       alt="Head"
                       fill
                       className="rounded-lg shadow object-cover"
@@ -238,7 +238,7 @@ export default function EditProjectPage() {
                   {imagesToKeep.map((img, idx) => (
                     <div key={idx} className="relative w-full h-24">
                       <Image
-                        src={`http://localhost:3000${img}`}
+                        src={`http://127.0.0.1:4000${img}`}
                         alt={`Extra ${idx}`}
                         fill
                         className="rounded-lg shadow object-cover"

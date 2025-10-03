@@ -120,7 +120,7 @@ viewport={{ once: true }}
 
           >
 
-            <Link href="/service" className=' p-4 bg-orange-500 rounded-xl px-10  flex gap-4 items-center justify-center text-white text-xl font-bold hover:bg-[#302560] '>
+            <Link href="tel:+923004096765" className=' p-4 bg-orange-500 rounded-xl px-10  flex gap-4 items-center justify-center text-white text-xl font-bold hover:bg-[#302560] '>
   <FaPhone className=' text-5xl md:text-2xl' />
   <h3 className=' hover:underline text-sm md:text-xl'>
     From Idea to Execution Let’s Begin.
